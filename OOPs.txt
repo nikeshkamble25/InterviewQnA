@@ -94,8 +94,9 @@ Types of Delegates
 		-Predicate - Predicate returns a boolean value
 		-Action - Its a void function, dont return anything
 
-Design Patterns Implementation
-	
+-----------------------------------------------------------------------------------------------------------------
+									Design Patterns Implementation
+-----------------------------------------------------------------------------------------------------------------	
 1. 	
 	Singleton
 		Class 
@@ -109,3 +110,42 @@ Design Patterns Implementation
 
 2. 
 	Factory Pattern
+		IProduct
+			function1
+			function2
+		Product: IProduct
+			function1
+			function2
+	
+	IFactory
+		IProduct CreateProduct
+	
+	Factory: IFactory
+		IProduct CreateProduct
+			return Product
+
+3. 
+	Abstract Factory Pattern
+		
+		IProductA
+			function1
+			function2
+		Product1A: IProductA
+			function1
+			function2
+		
+		IProductB
+			function1
+			function2
+		Product1B: IProductB
+			function1
+			function2
+		
+		
+	IFactory
+		IProductA CreateProductA
+		IProductB CreateProductB
+	
+	Factory: IFactory
+		IProduct CreateProduct
+			return Product

@@ -20,9 +20,12 @@
 - **Abstraction**: Show what is Necessary
 - **Encapsulation**: Hide Complexity 
 
-Method Hiding
+**Method Hiding**
+
 	When we have same declaration of method in both parent and child
+
 			Base Obj= new Child()
+
 	This time we have to add a new keyword
 	
 Constructors

@@ -190,13 +190,13 @@ This time we have to add a new keyword
 	**Used case** 	
 	- When we have multiple proucts also those products have further sub products
 	- For Example:
-		
-		IAbstractFactgory
-			GetAccount()
-			GetLoans()
-		
-		HDFCFactory: AbstractFactgory
-		SBIFactory: AbstractFactgory
+			
+				IAbstractFactgory
+					GetAccount()
+					GetLoans()
+				
+				HDFCFactory: AbstractFactgory
+				SBIFactory: AbstractFactgory
 
 - **_Builder Pattern_**
 	

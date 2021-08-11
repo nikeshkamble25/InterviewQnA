@@ -298,5 +298,5 @@ This time we have to add a new keyword
 			List<IComposite> Childrens
 			
 	**Use case**
-	Used case is simple for parent and child relationship we can used tthis pattern		
+	- Used case is simple for parent and child relationship we can used tthis pattern		
 	

@@ -120,12 +120,12 @@ This time we have to add a new keyword
 				return private variable
 			...Implementation		
 			
-**Used case** 
-- Logging
-- Container Dependency Injection
+	**Used case** 
+	- Logging
+	- Container Dependency Injection
 
-**How to make singleton pattern thread safe**
-- Use lock syntax over if condition
+	**How to make singleton pattern thread safe**
+	- Use lock syntax over if condition
 	
 2. **Factory Pattern**
 	

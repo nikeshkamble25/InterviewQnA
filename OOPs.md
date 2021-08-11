@@ -28,11 +28,12 @@
 
 	This time we have to add a new keyword
 	
-Constructors
-	Private => Can be accessed from same class or can create an instance in same class
-	Static=> 
-			- Can be accessed only once
-			- Can change value of read only value
+**Constructors**
+
+- Private => Can be accessed from same class or can create an instance in same class
+- Static => 
+	- Can be accessed only once
+	- Can change value of read only value
 			
 	Parameterized =>
 	Copy Consturctor = > 

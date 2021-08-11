@@ -143,27 +143,27 @@ This time we have to add a new keyword
 			IProduct CreateProduct
 				return Product
 	
-**Used case** 
-- When we have multiple products or types of objects then we can use this pattern
+	**Used case** 
+	- When we have multiple products or types of objects then we can use this pattern
 
-**For Example:**
+	**For Example:**
 
-		IAccount
-			Credit
-			Debit
-			Balance
-			Open
-			Close
-		
-		SavingsAccount: IAccount
-		CurrentAccount: IAccount
-		FixedDepositeAccount: IAccount
+			IAccount
+				Credit
+				Debit
+				Balance
+				Open
+				Close
+			
+			SavingsAccount: IAccount
+			CurrentAccount: IAccount
+			FixedDepositeAccount: IAccount
 
-		Factgory
-			GetAccount(Type)
-				Return Account on basis of Type
+			Factgory
+				GetAccount(Type)
+					Return Account on basis of Type
 
-3. **Abstract Factory Pattern**
+- **Abstract Factory Pattern**
 		
 		IProductA
 			function1
@@ -188,9 +188,9 @@ This time we have to add a new keyword
 			IProduct CreateProduct
 				return Product
 
-**Used case** 	
-- When we have multiple proucts also those products have further sub products
-- For Example:
+	**Used case** 	
+	- When we have multiple proucts also those products have further sub products
+	- For Example:
 		
 		IAbstractFactgory
 			GetAccount()
@@ -199,7 +199,7 @@ This time we have to add a new keyword
 		HDFCFactory: AbstractFactgory
 		SBIFactory: AbstractFactgory
 
-4. **Builder Pattern**
+- **Builder Pattern**
 	
 		Builder:
 			IBuilder
@@ -212,14 +212,14 @@ This time we have to add a new keyword
 		Director
 			Construct(IBuilder builder)
 
-**Used case** 			
-- This pattern can be used to read a different types of files or requests to api		
-- For Example:		
-	- ReadFile
-	- ConstructObject
-	- ObjectAsProduct
+	**Used case** 			
+	- This pattern can be used to read a different types of files or requests to api		
+	- For Example:		
+		- ReadFile
+		- ConstructObject
+		- ObjectAsProduct
 
-5. **Prototype**
+- **Prototype**
 	
 		IProtoType
 			Clone
@@ -227,6 +227,6 @@ This time we have to add a new keyword
 			Clone
 				Clone Logic
 
-**Used case**
-- This is must have pattern in project, where we can create another instance with same member data.
-- Classes wehere we need to copy Object data from obe object to other
+	**Used case**
+	- This is must have pattern in project, where we can create another instance with same member data.
+	- Classes wehere we need to copy Object data from obe object to other

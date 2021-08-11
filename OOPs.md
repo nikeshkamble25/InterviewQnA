@@ -106,10 +106,11 @@ This time we have to add a new keyword
 
 -----------------------------------------------------------------------------------------------------------------
 
-**Design Patterns Implementation**
+# Design Patterns Implementation
 
 -----------------------------------------------------------------------------------------------------------------	
-- **Singleton**
+
+# **Singleton**
 		
 		Class 
 			private static variable

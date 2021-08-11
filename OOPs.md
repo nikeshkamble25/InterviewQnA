@@ -106,10 +106,11 @@ This time we have to add a new keyword
 
 -----------------------------------------------------------------------------------------------------------------
 
-#Design Patterns Implementation
+**Design Patterns Implementation**
 
 -----------------------------------------------------------------------------------------------------------------	
 1. **Singleton**
+		
 		Class 
 			private static variable
 			static private ctor
@@ -118,6 +119,7 @@ This time we have to add a new keyword
 					assign to private variable
 				return private variable
 			...Implementation		
+			
 **Used case** 
 	- Logging
 	- Container Dependency Injection

@@ -2,25 +2,25 @@
 
 **Class relationship**
 	
-- **Inheritance** => IS A	
-- **Association** => Has A => Uni Directional Association	
-- **Composition** => Bi Directional Association	
-- **Aggregation** => Has a Multiple Relation in a single 
+- **_Inheritance_** => IS A	
+- **_Association_** => Has A => Uni Directional Association	
+- **_Composition_** => Bi Directional Association	
+- **_Aggregation_** => Has a Multiple Relation in a single 
 
 **Solid Principles**
 	
-- **S** => Single Resource REsposnsibility 	
-- **O** => Open for extenstion Close for Modification	
-- **L** => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
-- **I** => Interface Sagreegation 
-- **D** => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
+- **_S_** => Single Resource REsposnsibility 	
+- **_O_** => Open for extenstion Close for Modification	
+- **_L_** => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
+- **_I_** => Interface Sagreegation 
+- **_D_** => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
 
 **Polymorphism**: One subclass can be interpret with different forms
 	
 **Abstraction and Encapsulation**
 
-- **Abstraction**: Show what is Necessary
-- **Encapsulation**: Hide Complexity 
+- **_Abstraction_**: Show what is Necessary
+- **_Encapsulation_**: Hide Complexity 
 
 **Method Hiding**
 
@@ -32,33 +32,33 @@ This time we have to add a new keyword
 	
 **Constructors**
 
-- **Private** => Can be accessed from same class or can create an instance in same class
-- **Static** => 
+- **_Private_** => Can be accessed from same class or can create an instance in same class
+- **_Static_** => 
 	- Can be accessed only once
 	- Can change value of read only value		
-- **Parameterized** =>
-- **Copy Consturctor** = > Class has constructor with parameter with same class
+- **_Parameterized_** =>
+- **_Copy Consturctor_** = > Class has constructor with parameter with same class
 			
 			ClassA(ClassA obj) { ..Copy content }
 						
-- **Default Constructor** => When we dont supply any constructor
+- **_Default Constructor_** => When we dont supply any constructor
 
 
 **Access Modifier**
-- **Public** => Accessed from outside class in reference
-- **Private** => Access in same class
-- **Protected** => Can be accessed from same class and child class
-- **Internal** => Same as a public but in same assesmbly
-- **Protected Internal** => Object member can be acccessed internally in assembly and can be accessed through child class
+- **_Public_** => Accessed from outside class in reference
+- **_Private_** => Access in same class
+- **_Protected_** => Can be accessed from same class and child class
+- **_Internal_** => Same as a public but in same assesmbly
+- **_Protected Internal_** => Object member can be acccessed internally in assembly and can be accessed through child class
 
 
 **Class Types**
-- **Normal Class**
-- **Static Class**
+- **_Normal Class_**
+- **_Static Class_**
 	- All members should have static members
 	- No Instance created
 	- Can not inherit
-- **Abstract Class**
+- **_Abstract Class_**
 	- No Instance can be created
 	- Can not be static		
 	- Decorator pattern
@@ -69,22 +69,22 @@ This time we have to add a new keyword
 		- Decorator1: Decorator
 			- function
 			- decorator.function()
-- **Sealed Class**
+- **_Sealed Class_**
 	- Can not inherit
-- **Partial Class**
+- **_Partial Class_**
 	- Same class has multiple files
 		- aspx page
 		- cs page
-- **Sealed Partial calss**
+- **_Sealed Partial calss_**
 	- Can extend functionality of seal class
 
 
 **Difference between Abstract Class and Interface**
-- Non Tech Explaination	
+- _Non Tech Explaination_	
 	- Abstract class is ment to be an abstract (incomplete) its upon users (an developer who inherits) thought process how complete the definitaion of abtsract class
 	- Abstract classes are like abstract paintings, which are not finished but its upon viewers point of view how that person sees that paintings
 	- Interface are like contracts, there are certain clause that are mandatory to complete
-- Tech Explaination	
+- _Tech Explaination_	
 	- Abstract class can implementation 
 	- Interface dont have any definition
 	- Interfaces can be defined multiple times to a base class

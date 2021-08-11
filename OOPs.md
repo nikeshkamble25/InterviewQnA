@@ -30,17 +30,15 @@ This time we have to add a new keyword
 	
 **Constructors**
 
-- Private => Can be accessed from same class or can create an instance in same class
-- Static => 
+- **Private** => Can be accessed from same class or can create an instance in same class
+- **Static** => 
 	- Can be accessed only once
 	- Can change value of read only value
 			
-	Parameterized =>
-	Copy Consturctor = > 
-		Class has constructor with parameter with same class
+- **Parameterized** =>
+- **Copy Consturctor** = > Class has constructor with parameter with same class
 			 ClassA(ClassA obj) { ..Copy content }
-	Default Constructor =>
-		When we dont supply any constructor
+- **Default Constructor** => When we dont supply any constructor
 
 Access Modifier
 	Public => Accessed from outside class in reference

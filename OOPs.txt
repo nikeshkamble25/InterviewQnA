@@ -107,7 +107,13 @@ Types of Delegates
 					assign to private variable
 				return private variable
 			...Implementation		
+Used case 
+	- Logging
+	- Container Dependency Injection
 
+How to make singleton pattern thread safe
+		Use lock syntax over if condition
+	
 2. 
 	Factory Pattern
 		IProduct
@@ -124,6 +130,22 @@ Types of Delegates
 		IProduct CreateProduct
 			return Product
 
+Used case when we have multiple products or types of objects then we can use this pattern
+For Example:
+		IAccount
+			Credit
+			Debit
+			Balance
+			Open
+			Close
+		
+		SavingsAccount: IAccount
+		CurrentAccount: IAccount
+		FixedDepositeAccount: IAccount
+
+		Factgory
+			GetAccount(Type)
+				Return Account on basis of Type
 3. 
 	Abstract Factory Pattern
 		
@@ -149,3 +171,41 @@ Types of Delegates
 	Factory: IFactory
 		IProduct CreateProduct
 			return Product
+
+When we have multiple proucts also those products have further sub products
+For Example:
+		IAbstractFactgory
+			GetAccount()
+			GetLoans()
+		
+		HDFCFactory: AbstractFactgory
+		SBIFactory: AbstractFactgory
+
+4. Builder Pattern
+	
+		Builder:
+			IBuilder
+				Step1
+				Step2
+				Product 
+		
+		Builder: IBuilder
+		
+		Director
+			Construct(IBuilder builder)
+		
+This pattern can be used to read a different types of files or requests to api		
+For Example:	
+	
+	ReadFile
+	ConstructObject
+	ObjectAsProduct
+
+5. Prototype
+	IProtoType
+		Clone
+	Employee: IProtoType
+		Clone
+			Clone Logic
+This is must have pattern in project, where we can create another instance with same member data.
+Classes wehere we need to copy Object data from obe object to other

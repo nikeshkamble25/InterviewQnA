@@ -279,5 +279,5 @@ This time we have to add a new keyword
 			For Derivatives and Excel we can implement below class
 				DerivativeInExcel: Report
 			
-			Now the probem is when we want to write in PDF, then we have to wrote 2 classes for PDF
+			Now the probem is when we want to write in PDF, then we have to write 2 classes for PDF
 	

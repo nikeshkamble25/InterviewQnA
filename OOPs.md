@@ -109,7 +109,7 @@ This time we have to add a new keyword
 **Design Patterns Implementation**
 
 -----------------------------------------------------------------------------------------------------------------	
-1. **Singleton**
+- **Singleton**
 		
 		Class 
 			private static variable
@@ -127,7 +127,7 @@ This time we have to add a new keyword
 	**How to make singleton pattern thread safe**
 	- Use lock syntax over if condition
 	
-2. **Factory Pattern**
+- **Factory Pattern**
 	
 		IProduct
 			function1

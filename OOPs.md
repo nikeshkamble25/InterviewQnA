@@ -323,4 +323,4 @@ This time we have to add a new keyword
 				return base.CalculateRate(amount)+ 50;
 				
 	**Use case**
-	Best example when we have addition of rates in amount, that we can decorate using this pattern
+	- Best example when we have addition of rates in amount, that we can decorate using this pattern

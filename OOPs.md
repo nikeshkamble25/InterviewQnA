@@ -62,11 +62,11 @@ This time we have to add a new keyword
 	- Decorator pattern
 		- IDecorator
 		- abstract Decorator: IDecorator
-			Public SetDecorator(IDecorator decorator)
-			abstract function()
+			- Public SetDecorator(IDecorator decorator)
+			- abstract function()
 		- Decorator1: Decorator
-				function
-					decorator.function()
+			- function
+			- decorator.function()
 	Sealed Class
 		- Can not inherit
 	Partial Class

@@ -1,26 +1,18 @@
 **Class relationship**
 	
--Inheritance => IS A
-	
--Association => Has A
-		
--Uni Directional Association
-	
--Composition => Bi Directional Association
-	
--Aggregation => Has a Multiple Relation in a single 
+- Inheritance => IS A	
+- Association => Has A	
+- Uni Directional Association	
+- Composition => Bi Directional Association	
+- Aggregation => Has a Multiple Relation in a single 
 
 **Solid Principles**
 	
--S => Single Resource REsposnsibility 
-	
--O => Open for extenstion Close for Modification
-	
--L => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
-	
--I => Interface Sagreegation 
-	
--D => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
+- S => Single Resource REsposnsibility 	
+- O => Open for extenstion Close for Modification	
+- L => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
+- I => Interface Sagreegation 
+- D => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
 
 **Polymorphism**
 

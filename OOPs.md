@@ -49,23 +49,24 @@ This time we have to add a new keyword
 - Internal => Same as a public but in same assesmbly
 - Protected Internal => Object member can be acccessed internally in assembly and can be accessed through child class
 
-Class Types
-	Normal Class
-	Static Class
-		- All members should have static members
-		- No Instance created
-		- Can not inherit
-	Abstract Class
-		- No Instance created
-		- Can not be static		
-		- Decorator pattern
-			- IDecorator
-			- abstract Decorator: IDecorator
-				Public SetDecorator(IDecorator decorator)
-				abstract function()
-			- Decorator1: Decorator
-					function
-						decorator.function()
+
+**Class Types**
+- **Normal Class**
+- **Static Class**
+	- All members should have static members
+	- No Instance created
+	- Can not inherit
+- **Abstract Class**
+	- No Instance created
+	- Can not be static		
+	- Decorator pattern
+		- IDecorator
+		- abstract Decorator: IDecorator
+			Public SetDecorator(IDecorator decorator)
+			abstract function()
+		- Decorator1: Decorator
+				function
+					decorator.function()
 	Sealed Class
 		- Can not inherit
 	Partial Class

@@ -78,15 +78,15 @@ This time we have to add a new keyword
 
 
 **Difference between Abstract Class and Interface**
-	
-- Abstract class is ment to be an abstract (incomplete) its upon users (an developer who inherits) thought process how complete the definitaion of abtsract class
-- Abstract classes are like abstract paintings, which are not finished but its upon viewers point of view how that person sees that paintings
-- Interface are like contracts, there are certain clause that are mandatory to complete
-
-- Abstract class can implementation 
-- Interface dont have any definition
-- Interfaces can be defined multiple times to a base class
-- Interfaces can not have any variables instead it has only Function, Method and Properties
+- Non Tech Explaination	
+	- Abstract class is ment to be an abstract (incomplete) its upon users (an developer who inherits) thought process how complete the definitaion of abtsract class
+	- Abstract classes are like abstract paintings, which are not finished but its upon viewers point of view how that person sees that paintings
+	- Interface are like contracts, there are certain clause that are mandatory to complete
+- Tech Explaination	
+	- Abstract class can implementation 
+	- Interface dont have any definition
+	- Interfaces can be defined multiple times to a base class
+	- Interfaces can not have any variables instead it has only Function, Method and Properties
 
 Delegates
 	Dalegates are function pointer > functions can be passed as a parameters

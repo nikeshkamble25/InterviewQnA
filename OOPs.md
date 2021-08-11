@@ -88,23 +88,24 @@ This time we have to add a new keyword
 	- Interfaces can be defined multiple times to a base class
 	- Interfaces can not have any variables instead it has only Function, Method and Properties
 
-Delegates
-	Dalegates are function pointer > functions can be passed as a parameters
-	This is used in mejorly in Events, Linq, or for lasy load
+**Delegates**
+- Dalegates are function pointer > functions can be passed as a parameters
+- This is used in mejorly in Events, Linq, or for lasy load
 
-Types of Delegates
-	- Singlecast Delegates 
-	- Multicast +=
-	- Generic
-		-Functor - Returns a any value or reference
-		-Predicate - Predicate returns a boolean value
-		-Action - Its a void function, dont return anything
+**Types of Delegates**
+- Singlecast Delegates 
+- Multicast +=
+- Generic
+	-	Functor - Returns a any value or reference
+	-	Predicate - Predicate returns a boolean value
+	-	Action - Its a void function, dont return anything
+
+
 
 -----------------------------------------------------------------------------------------------------------------
-									Design Patterns Implementation
+									# Design Patterns Implementation
 -----------------------------------------------------------------------------------------------------------------	
-1. 	
-	Singleton
+1. **Singleton**
 		Class 
 			private static variable
 			static private ctor
@@ -113,15 +114,14 @@ Types of Delegates
 					assign to private variable
 				return private variable
 			...Implementation		
-Used case 
+**Used case** 
 	- Logging
 	- Container Dependency Injection
 
 How to make singleton pattern thread safe
 		Use lock syntax over if condition
 	
-2. 
-	Factory Pattern
+2. **Factory Pattern**
 		IProduct
 			function1
 			function2
@@ -136,7 +136,8 @@ How to make singleton pattern thread safe
 		IProduct CreateProduct
 			return Product
 
-Used case when we have multiple products or types of objects then we can use this pattern
+**Used case** 
+	When we have multiple products or types of objects then we can use this pattern
 For Example:
 		IAccount
 			Credit
@@ -152,8 +153,8 @@ For Example:
 		Factgory
 			GetAccount(Type)
 				Return Account on basis of Type
-3. 
-	Abstract Factory Pattern
+
+3. **Abstract Factory Pattern**
 		
 		IProductA
 			function1
@@ -178,8 +179,8 @@ For Example:
 		IProduct CreateProduct
 			return Product
 
-When we have multiple proucts also those products have further sub products
-For Example:
+- When we have multiple proucts also those products have further sub products
+- For Example:
 		IAbstractFactgory
 			GetAccount()
 			GetLoans()
@@ -187,7 +188,7 @@ For Example:
 		HDFCFactory: AbstractFactgory
 		SBIFactory: AbstractFactgory
 
-4. Builder Pattern
+4. **Builder Pattern**
 	
 		Builder:
 			IBuilder
@@ -200,18 +201,17 @@ For Example:
 		Director
 			Construct(IBuilder builder)
 		
-This pattern can be used to read a different types of files or requests to api		
-For Example:	
-	
-	ReadFile
-	ConstructObject
-	ObjectAsProduct
+- This pattern can be used to read a different types of files or requests to api		
+- For Example:		
+	- ReadFile
+	- ConstructObject
+	- ObjectAsProduct
 
-5. Prototype
+5. **Prototype**
 	IProtoType
 		Clone
 	Employee: IProtoType
 		Clone
 			Clone Logic
-This is must have pattern in project, where we can create another instance with same member data.
-Classes wehere we need to copy Object data from obe object to other
+- This is must have pattern in project, where we can create another instance with same member data.
+- Classes wehere we need to copy Object data from obe object to other

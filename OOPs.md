@@ -324,3 +324,22 @@ This time we have to add a new keyword
 				
 	**Use case**
 	- Best example when we have addition of rates in amount, that we can decorate using this pattern
+	
+- **_Proxy Pattern_**
+
+		ISubject
+			GetData()
+		
+		RealSubject: ISubject
+			GetData implementation
+		
+		ProxySubject: ISubject
+			private ISubject subject
+			GetData implementation
+				subject.GetData()
+				
+	**Use case**
+	- To control an access of Real subject implementation we can add a proxy subject
+	- Difference between Adapter pattern and Proxy
+		- **Adapter**: We have different classes target and adaptee
+		- **Proxy**: Both are same

@@ -67,25 +67,26 @@ This time we have to add a new keyword
 		- Decorator1: Decorator
 			- function
 			- decorator.function()
-- **Sealed Class
+- **Sealed Class**
 	- Can not inherit
-- **Partial Class
+- **Partial Class**
 	- Same class has multiple files
 		- aspx page
 		- cs page
-- **Sealed Partial calss
+- **Sealed Partial calss**
 	- Can extend functionality of seal class
 
-Difference between Abstract Class and Interface
+
+**Difference between Abstract Class and Interface**
 	
-	- Abstract class is ment to be an abstract (incomplete) its upon users (an developer who inherits) thought process how complete the definitaion of abtsract class
-	- Abstract classes are like abstract paintings, which are not finished but its upon viewers point of view how that person sees that paintings
-	- Interface are like contracts, there are certain clause that are mandatory to complete
-	
-	- Abstract class can implementation 
-	- Interface dont have any definition
-	- Interfaces can be defined multiple times to a base class
-	- Interfaces can not have any variables instead it has only Function, Method and Properties
+- Abstract class is ment to be an abstract (incomplete) its upon users (an developer who inherits) thought process how complete the definitaion of abtsract class
+- Abstract classes are like abstract paintings, which are not finished but its upon viewers point of view how that person sees that paintings
+- Interface are like contracts, there are certain clause that are mandatory to complete
+
+- Abstract class can implementation 
+- Interface dont have any definition
+- Interfaces can be defined multiple times to a base class
+- Interfaces can not have any variables instead it has only Function, Method and Properties
 
 Delegates
 	Dalegates are function pointer > functions can be passed as a parameters

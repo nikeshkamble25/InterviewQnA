@@ -45,11 +45,11 @@ This time we have to add a new keyword
 
 
 **Access Modifier**
-- Public => Accessed from outside class in reference
-- Private => Access in same class
-- Protected => Can be accessed from same class and child class
-- Internal => Same as a public but in same assesmbly
-- Protected Internal => Object member can be acccessed internally in assembly and can be accessed through child class
+- **Public** => Accessed from outside class in reference
+- **Private** => Access in same class
+- **Protected** => Can be accessed from same class and child class
+- **Internal** => Same as a public but in same assesmbly
+- **Protected Internal** => Object member can be acccessed internally in assembly and can be accessed through child class
 
 
 **Class Types**

@@ -17,8 +17,8 @@
 	
 **Abstraction and Encapsulation**
 
-	- **Abstraction**: Show what is Necessary
-	- **Encapsulation**: Hide Complexity 
+- **Abstraction**: Show what is Necessary
+- **Encapsulation**: Hide Complexity 
 
 Method Hiding
 	When we have same declaration of method in both parent and child

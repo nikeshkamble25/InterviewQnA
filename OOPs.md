@@ -106,11 +106,10 @@ This time we have to add a new keyword
 
 -----------------------------------------------------------------------------------------------------------------
 
-# Design Patterns Implementation
+**Design Patterns Implementation**
 
 -----------------------------------------------------------------------------------------------------------------	
-
-# **Singleton**
+- **_Singleton_**
 		
 		Class 
 			private static variable
@@ -128,7 +127,7 @@ This time we have to add a new keyword
 	**How to make singleton pattern thread safe**
 	- Use lock syntax over if condition
 	
-- **Factory Pattern**
+- **_Factory Pattern_**
 	
 		IProduct
 			function1
@@ -164,7 +163,7 @@ This time we have to add a new keyword
 				GetAccount(Type)
 					Return Account on basis of Type
 
-- **Abstract Factory Pattern**
+- **_Abstract Factory Pattern_**
 		
 		IProductA
 			function1
@@ -200,7 +199,7 @@ This time we have to add a new keyword
 		HDFCFactory: AbstractFactgory
 		SBIFactory: AbstractFactgory
 
-- **Builder Pattern**
+- **_Builder Pattern_**
 	
 		Builder:
 			IBuilder
@@ -220,7 +219,7 @@ This time we have to add a new keyword
 		- ConstructObject
 		- ObjectAsProduct
 
-- **Prototype**
+- **_Prototype_**
 	
 		IProtoType
 			Clone

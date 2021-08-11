@@ -121,13 +121,14 @@ This time we have to add a new keyword
 			...Implementation		
 			
 **Used case** 
-	- Logging
-	- Container Dependency Injection
+- Logging
+- Container Dependency Injection
 
-How to make singleton pattern thread safe
-		Use lock syntax over if condition
+**How to make singleton pattern thread safe**
+- Use lock syntax over if condition
 	
 2. **Factory Pattern**
+	
 		IProduct
 			function1
 			function2
@@ -135,16 +136,18 @@ How to make singleton pattern thread safe
 			function1
 			function2
 	
-	IFactory
-		IProduct CreateProduct
+		IFactory
+			IProduct CreateProduct
+		
+		Factory: IFactory
+			IProduct CreateProduct
+				return Product
 	
-	Factory: IFactory
-		IProduct CreateProduct
-			return Product
-
 **Used case** 
-	When we have multiple products or types of objects then we can use this pattern
-For Example:
+- When we have multiple products or types of objects then we can use this pattern
+
+**For Example:**
+
 		IAccount
 			Credit
 			Debit
@@ -177,16 +180,18 @@ For Example:
 			function2
 		
 		
-	IFactory
-		IProductA CreateProductA
-		IProductB CreateProductB
-	
-	Factory: IFactory
-		IProduct CreateProduct
-			return Product
+		IFactory
+			IProductA CreateProductA
+			IProductB CreateProductB
+		
+		Factory: IFactory
+			IProduct CreateProduct
+				return Product
 
+**Used case** 	
 - When we have multiple proucts also those products have further sub products
 - For Example:
+		
 		IAbstractFactgory
 			GetAccount()
 			GetLoans()
@@ -206,7 +211,8 @@ For Example:
 		
 		Director
 			Construct(IBuilder builder)
-		
+
+**Used case** 			
 - This pattern can be used to read a different types of files or requests to api		
 - For Example:		
 	- ReadFile
@@ -214,10 +220,13 @@ For Example:
 	- ObjectAsProduct
 
 5. **Prototype**
-	IProtoType
-		Clone
-	Employee: IProtoType
-		Clone
-			Clone Logic
+	
+		IProtoType
+			Clone
+		Employee: IProtoType
+			Clone
+				Clone Logic
+
+**Used case**
 - This is must have pattern in project, where we can create another instance with same member data.
 - Classes wehere we need to copy Object data from obe object to other

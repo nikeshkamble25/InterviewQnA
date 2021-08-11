@@ -229,3 +229,21 @@ This time we have to add a new keyword
 	**Used case**
 	- This is must have pattern in project, where we can create another instance with same member data.
 	- Classes wehere we need to copy Object data from obe object to other
+
+- **_Adapter_**
+	
+		Target(TradeObject)
+			virtual CCY1
+			virtual CCY2
+		Adaptee(Derivatives)
+			CCY	
+		Adapter: Target
+			private adapteeObject
+			CCY1 => adapteeObject.CCY
+			CCY2 => adapteeObject.CCY
+			
+	**Used case**
+	- When we have existing class that needs to behave as different class then we can use adapter pattern
+	- For Example: When we have existing TradeObject(Which support FX Object which has 2 CCYs) that we used to send to web API, suppose we get an requirement that we need to add another trade product and which has only one CCY1.
+	Instead changing web api we can use adapater pattern and change behaviour another trade product
+	

@@ -280,4 +280,23 @@ This time we have to add a new keyword
 				DerivativeInExcel: Report
 			
 			Now the probem is when we want to write in PDF, then we have to write 2 classes for PDF
+
+- **_Composite Pattern_**
+		
+		Abstract Composite
+			abstract Add
+			abstract Remove
+			virtual Childrens
+			Product
+		ParentComposite: IComposite
+			Add(IComposite)
+			Remove(IComposite)
+			List<IComposite> Childrens
+		LeafComposite: IComposite
+			Add(IComposite)
+			Remove(IComposite)
+			List<IComposite> Childrens
+			
+	**Use case**
+	Used case is simple for parent and child relationship we can used tthis pattern		
 	

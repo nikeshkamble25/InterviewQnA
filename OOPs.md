@@ -247,3 +247,37 @@ This time we have to add a new keyword
 	- For Example: When we have existing TradeObject(Which support FX Object which has 2 CCYs) that we used to send to web API, suppose we get an requirement that we need to add another trade product and which has only one CCY1.
 	Instead changing web api we can use adapater pattern and change behaviour another trade product
 	
+- **_Bridge_**
+
+		IImplementor
+			ReadRport()
+			
+		Implementor: IImplementor
+			ReadRport()
+		
+		abstract class Abstractor :IImplementor 
+			private IImplementor object
+			setImplemnation object = parameter
+			virtual ReadRport() {object.ReadRport()}
+			virtual WriteRport() {Logic to write Report}
+			
+		class redefinedAbstraction: Abstractor
+			override ReadRport() {...Add custom redefined abstraction}
+			override WriteRport() {...Add custom redefined abstraction}
+			
+			
+	**Use case**
+	- When we need to seperate extraction and implementation, so that both abstraction and implementation could work independently
+	- For Example: System has a reports for FX and Derivatives we will have different reports, which might return different in different format (PDF, Excel). If we work on legacy approach then will face below issue.
+	
+			IReport
+				ReadReport
+				WriteReport
+			
+			For FX and Excel we can implement below class
+				FXReportInExcel: IReport
+			For Derivatives and Excel we can implement below class
+				DerivativeInExcel: Report
+			
+			Now the probem is when we want to write in PDF, then we have to wrote 2 classes for PDF
+	

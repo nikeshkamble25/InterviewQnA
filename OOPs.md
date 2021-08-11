@@ -102,9 +102,9 @@ This time we have to add a new keyword
 	-	Predicate - Predicate returns a boolean value
 	-	Action - Its a void function, dont return anything
 
-
-
 -----------------------------------------------------------------------------------------------------------------
+
+
 
 # Design Patterns Implementation
 

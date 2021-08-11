@@ -1,24 +1,34 @@
-Class relationship
-	Inheritance => IS A
-	Association => Has A
-		Uni Directional Association
-	Composition => 
-		Bi Directional Association
-	Aggregation => Has a Multiple Relation in a single 
-
-Solid Principles
-	S => Single Resource REsposnsibility 
-	O => Open for extenstion Close for Modification
-	L => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
-	I => Interface Sagreegation 
-	D => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
-
-Polymorphism
-	One subclass can be interpret with different forms
+**Class relationship**
 	
-Abstraction and Encapsulation
-	Abstraction: Show what is Necessary
-	Encapsulation: Hide Complexity 
+-Inheritance => IS A
+	
+-Association => Has A
+		
+-Uni Directional Association
+	
+-Composition => Bi Directional Association
+	
+-Aggregation => Has a Multiple Relation in a single 
+
+**Solid Principles**
+	
+-S => Single Resource REsposnsibility 
+	
+-O => Open for extenstion Close for Modification
+	
+-L => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
+	
+-I => Interface Sagreegation 
+	
+-D => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
+
+**Polymorphism**
+
+One subclass can be interpret with different forms
+	
+**Abstraction and Encapsulation**
+-**Abstraction**: Show what is Necessary
+-**Encapsulation**: Hide Complexity 
 
 Method Hiding
 	When we have same declaration of method in both parent and child

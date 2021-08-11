@@ -33,19 +33,21 @@ This time we have to add a new keyword
 - **Private** => Can be accessed from same class or can create an instance in same class
 - **Static** => 
 	- Can be accessed only once
-	- Can change value of read only value
-			
+	- Can change value of read only value		
 - **Parameterized** =>
 - **Copy Consturctor** = > Class has constructor with parameter with same class
-			 ClassA(ClassA obj) { ..Copy content }
+			
+			ClassA(ClassA obj) { ..Copy content }
+						
 - **Default Constructor** => When we dont supply any constructor
 
-Access Modifier
-	Public => Accessed from outside class in reference
-	Private => Access in same class
-	Protected => Can be accessed from same class and child class
-	Internal => Same as a public but in same assesmbly
-	Protected Internal => Object member can be acccessed internally in assembly and can be accessed through child class
+
+**Access Modifier**
+- Public => Accessed from outside class in reference
+- Private => Access in same class
+- Protected => Can be accessed from same class and child class
+- Internal => Same as a public but in same assesmbly
+- Protected Internal => Object member can be acccessed internally in assembly and can be accessed through child class
 
 Class Types
 	Normal Class

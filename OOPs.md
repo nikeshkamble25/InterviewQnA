@@ -57,7 +57,7 @@ This time we have to add a new keyword
 	- No Instance created
 	- Can not inherit
 - **Abstract Class**
-	- No Instance created
+	- No Instance can be created
 	- Can not be static		
 	- Decorator pattern
 		- IDecorator
@@ -67,14 +67,14 @@ This time we have to add a new keyword
 		- Decorator1: Decorator
 			- function
 			- decorator.function()
-	Sealed Class
-		- Can not inherit
-	Partial Class
-		- Same class has multiple files
-			aspx page
-			cs page
-	Sealed Partial calss
-		- Can extend functionality of seal class
+- **Sealed Class
+	- Can not inherit
+- **Partial Class
+	- Same class has multiple files
+		- aspx page
+		- cs page
+- **Sealed Partial calss
+	- Can extend functionality of seal class
 
 Difference between Abstract Class and Interface
 	

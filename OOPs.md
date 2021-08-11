@@ -298,5 +298,29 @@ This time we have to add a new keyword
 			List<IComposite> Childrens
 			
 	**Use case**
-	- Used case is simple for parent and child relationship we can used tthis pattern		
+	- Used case is simple for parent and child relationship we can used this pattern			
 	
+- **_Decorator Pattern_**
+	
+		IRateContract
+			CalculateRate
+		
+		Rate: IRateContract
+			int CalculateRate(int amount) => return amount;
+		
+		Abstract RateDecoratorAbstract: IRateContract
+			private IRateContract _decorator
+			public setDecorator(IRateContract decorator)
+			virtual CalculateRate(int amount)
+				return _decorator.CalculateRate(amount)
+		
+		MTMRateDecorator: RateDecoratorAbstract
+			override CalculateRate(int amount)
+				return base.CalculateRate(amount)+ 100;
+		
+		IntraRateDecorator: RateDecoratorAbstract
+			override CalculateRate(int amount)
+				return base.CalculateRate(amount)+ 50;
+				
+	**Use case**
+	Best example when we have addition of rates in amount, that we can decorate using this pattern

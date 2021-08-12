@@ -46,7 +46,8 @@
 - System.Linq have added multiple functions like below
 	- Where
 	- OrderBy
+	- Select
 	- ..
 
 **AsParellel Extension Class**
-- This is used for expensive 
+- This is used for expensive functions like in _Select_

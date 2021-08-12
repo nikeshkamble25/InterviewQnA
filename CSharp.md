@@ -50,4 +50,8 @@
 	- ..
 
 **AsParellel Extension Class**
-- This is used for expensive functions like in _Select_
+- This is used for expensive functions like in _Select_ having complex and time consuming logic
+- This function gives an unordered list of data
+- _AsOrdered_ function can be used for getting ordered list data
+- Can control multiple parellelism using a function WithDegreeOfParallelism
+

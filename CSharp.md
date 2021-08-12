@@ -55,3 +55,13 @@
 - _AsOrdered_ function can be used for getting ordered list data
 - Can control multiple parellelism using a function WithDegreeOfParallelism
 
+**Difference between Out and Ref**
+- Out is  like its name where we have to send an output, i.e. when we pass a value from outside then out does not read that external value
+- Out is uni directional and ref is bi directional
+
+**Boxing and unboxing**
+- Coverting a value type to reference type
+- (object)
+
+**Garbage Collection**
+- G0, G1, G2

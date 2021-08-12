@@ -16,6 +16,25 @@
 	- Object CurrentItem
 	- void MoveNext
 	- void Reset
-- For loop is used for IEnumerable and While loop is used for IEnumerator
-- IEnumerator can not go back like from 5th index to 3rd, but IEnumerable it is possible
+- ForEach loop is used for IEnumerable and While loop is used for IEnumerator
 
+**What is difference between IEnumerable and ICollection**
+- ICollection is part of IEnumerable
+- Added some below extract details
+	- Count
+	
+**What is difference between ICollection and IList**
+- IList is part of ICollection 
+- Added some below extract details
+	- Add
+	- Remove
+	- Clear
+- Alsi IList is an index hence we can use get specific index like [1]
+
+-------------------------------------------------------------------------------------------------------------------
+
+			IEnumerator --> IEnumerable --> ICollection --> IList
+				 |
+				 |
+				 -->-->-->--> IQueryable(System.Linq)
+-------------------------------------------------------------------------------------------------------------------

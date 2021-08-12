@@ -41,3 +41,12 @@
 
 **IQueryable**
 - This interface is a part of System.Linq namespace hence this is used to create a queries in database
+
+**Enumerable Extension Class**
+- System.Linq have added multiple functions like below
+	- Where
+	- OrderBy
+	- ..
+
+**AsParellel Extension Class**
+- This is used for expensive 

@@ -34,10 +34,8 @@
 **Application Lifecycle**
 
 			Middlewares -> Filter Pipeline -> Authorization Filter -> Resource Filter ->  Model Binding 
-			
-
 														 |
 														 |
 														 |
-				Result Sent(Execute)<--Result Filter<--Action Execution<--Action Filter<--
+					Result Sent(Execute)<--Result Filter<--Action Execution<--Action Filter<---
 			

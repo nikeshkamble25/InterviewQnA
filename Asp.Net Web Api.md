@@ -39,3 +39,40 @@
 														 |
 			   Result Sent<--Result Filter<--Exception Filter<--Action Execution<--Action Filter<-----
 			
+**Middleware in web Api**
+- Whatever the function start with Use are middlewares
+- Create custom middlware
+	- Create class 
+	- add CTOR with RequestDelegate next as parameter
+	- Task Invoke(HttpContext httpContext, IMyScopedService svc)
+	- create exetension method for IApplicationBuilder
+		- builder.UseMiddleware<Classname>();
+	- app.UseClassname();
+
+**Authentication in Web Api**
+- services add Authentication
+- Add JwtBearerToken
+- Jwt as below 3 sections
+	- header
+	- payload
+	- sign
+		- ValidateIssuerSigningKey = true
+		- IssuerSigningKey = token
+- Add Identity in DbContext
+- Predefined User, Role and UserLogin
+- Create token after login
+	- check username and password
+	- create claims
+	- sign in cred
+	- token descriptor
+	- token handler
+	- token
+	- save Usermanager and save token in database
+	
+- OAuth Google Authentication
+	- create clientId and clientSecret in Google
+	- Add Middleware
+		- ClientId
+		- ClientSecret
+		- Callbackpath
+		- Profile

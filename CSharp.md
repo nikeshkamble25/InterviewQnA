@@ -65,3 +65,35 @@
 
 **Garbage Collection**
 - G0, G1, G2
+
+**Const and Readonly**
+- Const is compile time and readonly is runtime
+
+**Async and Thread**
+- Async code does not use multiple thread like traditional thread that we used to use
+- Async creates only creates one thread, which is used to unblock main thread
+- Async is created TPL over Threading classes
+- StateMachine -> divided a code in different state
+- When SyncronizationContext is not available then .net creates different thread which resumes existing thread
+- Async and TPL gives more code structure instead performance
+
+**Difference between concurrency and parellel**
+- Concorrency means executing multiple task on same time - Context Switching - Time Slicing
+- Parellel is actually running ur task multiple cores
+
+**Making code thread safe**
+- Lock Keyword - Short cut
+- Monitor
+	- Monitor.Enter(_lock)
+	- Monitor.Exit(_lock)
+	- Locktaken ref parameters tells if lock is successfully added
+- Mutex 
+	- This can be used to restrict multiple application/ main thread sun
+- semaphore 
+
+**AutoresetEvent and Manual Rset Event**
+- _WaitOne_: Wait till I get response from set()
+- _Set_: Send a message to Wait one
+
+- AutoresetEvent: Open for one to one
+- Manual reset: Open all waitone

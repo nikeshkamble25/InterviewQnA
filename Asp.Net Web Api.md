@@ -37,5 +37,5 @@
 														 |
 														 |
 														 |
-			Result Sent(Execute)<--Result Filter<--Exception Filter<--Action Execution<--Action Filter<-
+			Result Sent<--Result Filter<--Exception Filter<--Action Execution<--Action Filter<-
 			

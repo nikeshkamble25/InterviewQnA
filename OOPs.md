@@ -1,37 +1,37 @@
 # OOP Interview Questions
 
-**Class relationship**
-	
+**Class relationship**	
 - **_Inheritance_** => IS A	
 - **_Association_** => Has A => Uni Directional Association	
 - **_Composition_** => Bi Directional Association	
 - **_Aggregation_** => Has a Multiple Relation in a single 
 
-**Solid Principles**
-	
+
+**Solid Principles**	
 - **_S_** => Single Resource REsposnsibility 	
 - **_O_** => Open for extenstion Close for Modification	
 - **_L_** => Liskov Substitution -> Car and Tesla Car -> Child Class should be is as super class -> Duck who cant fly are not Duck
 - **_I_** => Interface Sagreegation 
 - **_D_** => Dependancy Inversion -> Low Level code should not dependant of High level code instead they should be dependent on abstraction
 
+
 **Polymorphism**: One subclass can be interpret with different forms
+
 	
 **Abstraction and Encapsulation**
-
 - **_Abstraction_**: Show what is Necessary
 - **_Encapsulation_**: Hide Complexity 
 
-**Method Hiding**
 
+**Method Hiding**
 When we have same declaration of method in both parent and child
 
 	Base Obj= new Child()
 
 This time we have to add a new keyword
 	
+	
 **Constructors**
-
 - **_Private_** => Can be accessed from same class or can create an instance in same class
 - **_Static_** => 
 	- Can be accessed only once
@@ -90,9 +90,11 @@ This time we have to add a new keyword
 	- Interfaces can be defined multiple times to a base class
 	- Interfaces can not have any variables instead it has only Function, Method and Properties
 
+
 **Delegates**
 - Dalegates are function pointer > functions can be passed as a parameters
 - This is used in mejorly in Events, Linq, or for lasy load
+
 
 **Types of Delegates**
 - Singlecast Delegates 
@@ -102,9 +104,18 @@ This time we have to add a new keyword
 	-	Predicate - Predicate returns a boolean value
 	-	Action - Its a void function, dont return anything
 
+
 **Types of Polymorphism**
 - Compile Time poly.. : Overload
 - Runtime Time poly.. : Override
+	
+	
+**Types of Dependancy Injection**
+- Constructor
+- Property
+- Method 
+- Delegate
+
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -325,6 +336,7 @@ This time we have to add a new keyword
 		IntraRateDecorator: RateDecoratorAbstract
 			override CalculateRate(int amount)
 				return base.CalculateRate(amount)+ 50;
+				
 				
 	**Use case**
 	- Best example when we have addition of rates in amount, that we can decorate using this pattern
